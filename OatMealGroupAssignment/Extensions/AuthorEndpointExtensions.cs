@@ -9,7 +9,7 @@ public static class AuthorEndpointExtensions
     {
         var group = app.MapGroup("api/author");
 
-        group.MapPost("/{bookId}", AddAuthor);
+        group.MapPost("/", AddAuthor);
         group.MapGet("/", GetAllAuthors);
         group.MapPut("/{id}", UpdateAuthor);
         group.MapDelete("/{id}", DeleteBook);
@@ -35,18 +35,29 @@ public static class AuthorEndpointExtensions
 
     private static List<Author> GetAllAuthors(OatMealDbContext context)
     {
-        return context.Authors.Select(a => new Author
+        if (context.Books.Count() != 0)
         {
-            Id = a.Id,
-            Name = a.Name,
-            Books = a.Books
-        }).ToList();
+            return context.Authors.Select(a => new Author
+            {
+                Id = a.Id,
+                Name = a.Name,
+
+                Books = a.Books
+            }).ToList();
+        }
+        else
+        {
+            return context.Authors.Select(a => new Author
+            {
+                Id = a.Id,
+                Name = a.Name
+            }).ToList();
+        }
     }
 
-    private static void AddAuthor(OatMealDbContext context, Author author, int bookId)
+    private static void AddAuthor(OatMealDbContext context, Author author)
     {
-        var book = context.Books.FirstOrDefault(b => b.Id == bookId);
-        author.Books.Add(book);
+       
         context.Authors.Add(author);
         context.SaveChanges();
 

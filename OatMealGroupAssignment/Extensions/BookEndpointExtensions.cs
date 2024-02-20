@@ -21,6 +21,7 @@ public static class BookEndpointExtensions
     {
         var book = context.Books.FirstOrDefault(b => b.Id == id);
         context.Books.Remove(book);
+        context.SaveChanges();
     }
 
     private static void UpdateBook(OatMealDbContext context, Book book, int id)
@@ -51,5 +52,7 @@ public static class BookEndpointExtensions
         var author = context.Authors.FirstOrDefault(a => a.Id == authorId);
         book.Authors.Add(author);
         context.Add(book);
+        context.SaveChanges();
+
     }
 }
