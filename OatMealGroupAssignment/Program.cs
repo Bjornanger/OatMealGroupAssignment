@@ -19,6 +19,7 @@ var app = builder.Build();
 
 app.BookEndpoints();
 app.AuthorEndPoints();
+app.StoreEndpoints();
 
 
 
