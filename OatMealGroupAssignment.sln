@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OatMealGroupAssignment", "OatMealGroupAssignment\OatMealGroupAssignment.csproj", "{DBA8F31A-C0D4-40E4-97AE-200B12BC6AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{287E8006-B944-407B-9C11-C5B267020986}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBA8F31A-C0D4-40E4-97AE-200B12BC6AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA8F31A-C0D4-40E4-97AE-200B12BC6AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA8F31A-C0D4-40E4-97AE-200B12BC6AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA8F31A-C0D4-40E4-97AE-200B12BC6AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{287E8006-B944-407B-9C11-C5B267020986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287E8006-B944-407B-9C11-C5B267020986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287E8006-B944-407B-9C11-C5B267020986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287E8006-B944-407B-9C11-C5B267020986}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3559A5AB-4DE9-4406-9E6D-7307FB902FD3}
+	EndGlobalSection
+EndGlobal

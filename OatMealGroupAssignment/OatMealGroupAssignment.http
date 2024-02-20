@@ -1,0 +1,6 @@
+@OatMealGroupAssignment_HostAddress = http://localhost:5286
+
+GET {{OatMealGroupAssignment_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
