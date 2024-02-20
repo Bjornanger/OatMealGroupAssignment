@@ -11,5 +11,5 @@ public class Book
     public string Title { get; set; }
     public double Price { get; set; }
 
-    public List<Author> AuthorId { get; set; } = new List<Author>();
+    public List<Author> Authors { get; set; } = new List<Author>();
 }

@@ -18,6 +18,7 @@ builder.Services.AddDbContext<OatMealDbContext>(options =>
 var app = builder.Build();
 
 app.BookEndpoints();
+app.AuthorEndPoints();
 
 
 
