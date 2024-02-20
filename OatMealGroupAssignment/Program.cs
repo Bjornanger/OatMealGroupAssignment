@@ -1,5 +1,6 @@
 using DataAccess;
 using Microsoft.EntityFrameworkCore;
+using OatMealGroupAssignment.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,7 @@ builder.Services.AddDbContext<OatMealDbContext>(options =>
 
 var app = builder.Build();
 
-
+app.BookEndpoints();
 
 
 
